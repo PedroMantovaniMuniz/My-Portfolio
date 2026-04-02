@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Business CRM</title>
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@1&icon_names=personlock" />
+    <link rel="stylesheet" href="styles/login-page-style.css">
+    <link rel="stylesheet" href="styles/global-classes.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@1&icon_names=personlock">
 </head>
 <body>
-    <main>
+    <main class="glassed-bg">
         <div>
             <h1>Welcome to the Business Client Manager</h1>
             <p>Manage your business relationships more easily and efficiently.</p>
@@ -18,12 +19,12 @@
             <p>Please log in to access your dashboard.</p>
             <div class="inputs">
                 <i class="material-symbols-rounded person">person</i>
-                <input type="text" id="username" name="username" placeholder="User" required>
+                <input type="text" id="username" name="username" placeholder="User" class="input" required>
                 <i class="material-symbols-rounded lock">lock</i>
-                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="password" id="password" name="password" placeholder="Password" class="input" required>
             </div>
             <p><a href="#">Forgot your password? Click here</a></p>
-            <button type="submit">Log In</button>
+            <button type="submit" class="button">Log In</button>
         </form>
     </main>
 </body>

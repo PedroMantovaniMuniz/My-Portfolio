@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url(../images/calculator-documents-bg.jpg) no-repeat center center;
+}
+
+a {
+    text-decoration: none;
+}
+
+body > div {
+    height: fit-content;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+header > h1 {
+    font-size: 3.5em;
+}
+
+header > a {
+    height: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+
+    display: inline-block;
+
+    border: lightcoral 2px solid;
+
+    color: lightcoral;
+}
+
+header > a:hover {
+    background-color: lightcoral; 
+
+    color: white
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+main > p {
+    padding-bottom: 6px;
+
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+main > p::after {
+    content: '';
+    width: 233px;
+    height: 2px;
+    border-radius: 5px;
+
+    display: block;
+
+    background-color: #353535;
+}
+
+main > a {
+    display: inline-block;
+    padding-bottom: 60px;
+}
+
+nav {
+    max-width: 500px;
+    width: 50vw;
+    height: fit-content;
+}
+
+nav > ul {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+nav > ul > li {
+    height: 4em;
+}
+
+nav > ul > li > a {
+    padding: 20px;
+}
+
+nav > ul > li:nth-child(3) > a:hover {
+    padding: 17px;
+}
+
+@media (min-width: 993px) and (max-width: 2559px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        gap: 140px;
+    }
+
+    main > p::after {
+        width: 500px;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav > ul {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        place-items: center stretch;
+        gap: 30px;
+    }
+
+    nav > ul > li {
+        height: 6em;
+    }
+}
+
+@media (min-width: 2560px) {
+    body > div {
+        padding: 50px;
+    }
+
+    header {
+        flex-direction: row;
+        align-items: center;
+        gap: 300px;
+
+        font-size: 2.5em;
+    }
+
+    main {
+        gap: 0px;
+    }
+
+    main > p {
+        font-size: 2.3em;
+    }
+
+    main > p::after {
+        width: 412px;
+    }
+    
+    nav {
+        max-width: none;
+        width: fit-content;
+        padding: 40px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav > ul {
+        width: 45vw;
+        height: fit-content;
+
+        display: grid;
+        grid-template: 12em 12em / 1fr 1fr;
+        place-items: center stretch;
+        gap: 30px;
+    }
+
+    nav > ul > li {
+        height: 12em;
+    }
+}
