@@ -65,7 +65,6 @@ main > p {
     padding-bottom: 6px;
 
     font-size: 1.3em;
-    font-weight: bold;
 }
 
 main > p::after {
