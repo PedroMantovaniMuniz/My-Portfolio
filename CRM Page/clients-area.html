@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients Area - CRM</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global-classes.css">
+    <link rel="stylesheet" href="styles/clients-area.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@1&icon_names=menumenu_open">
+</head>
+<body onclick="openMenu('body')">
+    <header>
+        <h1>Hello, User!</h1>
+        <menu>
+            <i class="material-symbols-rounded" id="menuClosedIcon" onclick="openMenu('menu')">menu</i>
+            <i class="material-symbols-rounded" id="menuOpenedIcon" onclick="openMenu('menu')" style="display: none;">menu_open</i>
+            <ul class="glassed-bg" id="hMenu" style="display: none; background-color: #ffffffc7;">
+                <li><a href="./main-menu.html" class="link-button">Main Menu</a></li>
+                <li><a href="#" class="link-button">Registry Client</a></li>
+                <li><a href="#" class="link-button">Contract Patterns</a></li>
+                <li><a href="#" class="link-button">Your Services</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main class="glassed-bg">
+        <h2>Clients Area</h2>
+        <p>Welcome to the Clients Area. Here you can manage your clients quickly.</p>
+        <div>
+            <ul>
+                <li class="glassed-bg">
+                    <h3>Client <span>1</span></h3>
+                    <p>Project name</p>
+                    <p>Project description</p>
+                    <a href="#" class="link-button">More</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

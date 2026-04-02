@@ -51,8 +51,6 @@
 }
 
 .glassed-bg {
-    border-radius: 5px;
-    box-shadow: 0px 5px 50px #000000b4;
     backdrop-filter: blur(10px);
 
     background-color: #ffffff80;

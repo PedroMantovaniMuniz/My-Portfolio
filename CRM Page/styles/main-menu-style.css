@@ -10,10 +10,6 @@ body {
     background: url(../images/calculator-documents-bg.jpg) no-repeat center center;
 }
 
-a {
-    text-decoration: none;
-}
-
 body > div {
     height: fit-content;
     padding: 20px;
@@ -62,8 +58,6 @@ main {
 }
 
 main > p {
-    padding-bottom: 6px;
-
     font-size: 1.3em;
 }
 
